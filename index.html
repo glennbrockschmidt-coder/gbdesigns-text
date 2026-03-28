@@ -1,10 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="refresh" content="0; url=sms:+18593910005?body=Hi%20Glenn%20—%20I%20got%20one%20of%20your%20GBdesigns%20bottle%20openers%20🙂" />
-<title>Opening Messages…</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GBdesigns</title>
+  <meta
+    name="description"
+    content="GBdesigns - Custom laser engraving, 3D printing, and small-batch maker projects."
+  />
+  <style>
+    :root {
+      --bg: #f4f4f1;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #5f5f5f;
+      --line: #d9d9d4;
+      --accent: #1f1f1f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      padding: 28px 20px 22px;
+      text-align: center;
+    }
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    /* Placeholder triangle logo */
+    .triangle-logo {
+      width: 0;
+      height: 0;
+      border-left: 34px solid transparent;
+      border-right: 34px solid transparent;
+      border-bottom: 58px solid #1f1f1f;
+      position: relative;
+    }
+
+    .triangle-logo::after {
+      content: "GB";
+      position: absolute;
+      left: -13px;
+      top: 24px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    p {
+      margin: 10px 0;
+      line-height: 1.45;
+      font-size: 1rem;
+    }
+
+    .cta {
+      display: inline-block;
+      margin: 18px 0 16px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .cta:hover,
+    .cta:focus {
+      background: #353535;
+    }
+
+    .examples {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .example {
+      aspect-ratio: 1 / 1;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      overflow: hidden;
+      background: #ecece8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .example img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        padding: 24px 16px 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.96rem;
+      }
+    }
+  </style>
 </head>
 <body>
-Opening Messages…
+  <div class="wrap">
+    <main class="card">
+      <div class="logo-wrap" aria-hidden="true">
+        <div class="triangle-logo"></div>
+      </div>
+
+      <h1>GBdesigns</h1>
+      <p class="tagline">Create • 3D Print • Laser Engrave</p>
+
+      <p>You scanned one of my pieces -- thanks for checking it out.</p>
+      <p>
+        I’m Glenn, and I make custom engraved, 3D-printed, and small-batch
+        projects.
+      </p>
+      <p>If you have an idea, a gift, or a project in mind, send me a text.</p>
+
+      <a
+        class="cta"
+        href="sms:18593910005?body=Hi%20Glenn,%20I%20scanned%20your%20GBdesigns%20code%20and%20wanted%20to%20reach%20out."
+      >
+        Text Glenn
+      </a>
+
+      <section class="examples" aria-label="Examples of GBdesigns work">
+        <div class="example">Example 1</div>
+        <div class="example">Example 2</div>
+        <div class="example">Example 3</div>
+      </section>
+
+      <p class="footer">Local maker. Real projects. One-offs, gifts, and small runs.</p>
+    </main>
+  </div>
 </body>
 </html>
